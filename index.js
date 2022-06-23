@@ -29,14 +29,32 @@
 
 
  //Print factorial of a number using recursion.
- function facto(num,fact){
-    if(num>0){
-        fact *= num;
-        return facto(num-1,fact);
-    }
-    return fact;
- }
- console.log(facto(5,1))
+//  function facto(num,fact){
+//     if(num>0){
+//         fact *= num;
+//         return facto(num-1,fact);
+//     }
+//     return fact;
+//  }
+//  console.log(facto(5,1))
 
-//Print all the even numbers in the given range using recursion.
-// function 
+//Given a number n, print all the even numbers from n to 1 using recursion.
+function number(n,num2){
+    if(n%2 == 0){
+        // console.log(n);
+        return number(n-1,num2);
+    }
+    return num2
+}
+console.log(number(10,1));
+
+//Write a Javascript program to count the number of digits a given number has using recursion.
+// function numberD(number1,count){
+//     if(number1>0){
+//         number1 = parseInt(number1/10);
+//         count++;
+//         return numberD(number1,count);
+//     }
+//     return count
+// }
+// console.log(numberD(5456765,0))
